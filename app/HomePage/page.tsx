@@ -6,10 +6,10 @@
 
 import Navbar from '../../components/Navbar';
 import DotGroup from '../../components/DotGroup';
-// import Landing from '../components/Landing';
 import Landing from './../Landing/page';
 import MySkills from './../MySkills/MySkills';
 import Projects from '../Projects/page';
+import Contact from '../Contact/page';
 import { useEffect, useState } from 'react';
 import LineGradient from '../../components/LineGradient';
 import useMediaQuery from '../../hooks/useMediaQuery';
@@ -51,6 +51,10 @@ export default function Home() {
       <LineGradient />
       <div className="w=5/6 mx-auto">
         <Projects />
+      </div>
+      <LineGradient />
+      <div className="w=5/6 mx-auto">
+        <Contact />
       </div>
     </div>
   );

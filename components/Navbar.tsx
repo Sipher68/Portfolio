@@ -39,7 +39,7 @@ const Navbar = ({
 }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
-  const navbarBackground = isTopOfPage ? '' : 'bg-red';
+  const navbarBackground = isTopOfPage ? '' : 'bg-dark-blue';
 
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
@@ -72,7 +72,7 @@ const Navbar = ({
           </div>
         ) : (
           <button
-            className="rounded-full bg-red p-2"
+            className="rounded-full bg-white p-2"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
             <Image alt="menu-icon2" src={menuIcon} width={25} height={25} />
